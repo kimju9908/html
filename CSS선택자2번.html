@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box > p {
+        color: red;
+      }
+      /* 인접 형제 선택자 */
+      h1 + h2 {
+        color: aqua;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <p>내용1번 입니다.</p>
+      <div>
+        <p>손자1번입니다.</p>
+        <p>손자 2번입니다.</p>
+      </div>
+      <p>내용 2번입니다.</p>
+    </div>
+    <h1>제목1번입니다</h1>
+    <h2>제목2번입니다</h2>
+    <h2>제목3번입니다</h2>
+  </body>
+</html>

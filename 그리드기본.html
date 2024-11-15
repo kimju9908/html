@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <style>
+      .grid-item {
+        color: black;
+        background-color: royalblue;
+      }
+      .grid-item:nth-child(2n) {
+        background-color: orange;
+      }
+
+      .grid-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(50px, 200px));
+        grid-template-rows: repeat(3, minmax(20px, auto));
+      }
+    </style>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="grid-item">
+        <ul class="text">
+          안녕하세요
+        </ul>
+        <ul class="text" id="hello">
+          안녕하세요
+        </ul>
+        <ul class="text">
+          안녕하세요
+        </ul>
+        <ul class="text">
+          안녕하세요
+        </ul>
+      </div>
+      <div class="grid-item">그리드 박스 2번</div>
+      <div class="grid-item">그리드 박스 3번</div>
+      <div class="grid-item">그리드 박스 4번</div>
+      <div class="grid-item">그리드 박스 5번</div>
+      <div class="grid-item">그리드 박스 6번</div>
+    </div>
+  </body>
+</html>
